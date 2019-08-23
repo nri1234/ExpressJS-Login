@@ -40,7 +40,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.get("/", function(req, res) {
-    res.render("index", { user: req.user });
+    res.render("index");
 });
 
 app.get("/logged", function(req, res) {
